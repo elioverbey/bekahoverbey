@@ -868,6 +868,7 @@ a { color: inherit; text-decoration: none; }
   .book-tags { justify-content: center; }
   .arc-signup { margin-left: auto; margin-right: auto; }
   .coming-soon-actions { align-items: center; }
+  .coming-soon-cta { align-self: center; }
 }
 
 @media (max-width: 600px) {
