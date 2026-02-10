@@ -1,7 +1,7 @@
 title: Bekah Overbey
 description: "Bekah Overbey — author of Anything Everything, Hideaway, Just Don't Say Love, The Block Island Charade, and Always Forever. Romcoms with heart, humor, and depth."
 url: "https://bekahoverbey.com"
-baseurl: "/bekahoverbey"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
