@@ -1,7 +1,7 @@
 title: Bekah Overbey
 description: Author of romcoms with heart, humor, and depth.
 url: "https://bekahoverbey.com"
-baseurl: ""
+baseurl: "/bekahoverbey"
 
 # Build settings
 markdown: kramdown

@@ -1,9 +1,33 @@
----
-layout: default
-title: Bekah Overbey — Author
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bekah Overbey — Author</title>
+  <meta name="description" content="Author of romcoms with heart, humor, and depth.">
 
-<!-- Navigation -->
+  <!-- Favicon -->
+  <link rel="icon" href="/bekahoverbey/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/bekahoverbey/assets/images/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/bekahoverbey/assets/images/favicon-180.png">
+
+  <!-- Social Sharing / Open Graph -->
+  <meta property="og:title" content="Bekah Overbey — Author">
+  <meta property="og:description" content="Author of romcoms with heart, humor, and depth.">
+  <meta property="og:image" content="http://localhost:4000/assets/images/og-image.png">
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bekah Overbey — Author">
+  <meta name="twitter:description" content="Author of romcoms with heart, humor, and depth.">
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/og-image.png">
+
+  <!-- Fonts are self-hosted in /assets/fonts/ — no external requests -->
+  <link rel="stylesheet" href="/bekahoverbey/assets/css/fonts.css">
+  <link rel="stylesheet" href="/bekahoverbey/assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
 <nav class="site-nav" id="nav">
   <a href="#" class="nav-logo">Bekah Overbey</a>
   <ul class="nav-links">
@@ -39,7 +63,7 @@ title: Bekah Overbey — Author
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-image-wrap">
-        <img src="{{ '/assets/images/bekah-author.jpg' | relative_url }}" alt="Bekah Overbey" class="about-image">
+        <img src="/bekahoverbey/assets/images/bekah-author.jpg" alt="Bekah Overbey" class="about-image">
       </div>
       <div class="about-text">
         <span class="section-label">About Bekah</span>
@@ -73,7 +97,7 @@ title: Bekah Overbey — Author
       <div class="coming-soon-sparkle coming-soon-sparkle-3">✦</div>
       <div class="coming-soon-inner">
         <div class="coming-soon-cover-wrap">
-          <img src="{{ '/assets/images/always-forever.png' | relative_url }}" alt="Always, Forever book cover" class="book-cover">
+          <img src="/bekahoverbey/assets/images/always-forever.png" alt="Always, Forever book cover" class="book-cover">
         </div>
         <div class="coming-soon-info">
           <p class="coming-soon-badge">Coming Spring 2026</p>
@@ -115,7 +139,7 @@ title: Bekah Overbey — Author
       <!-- Book 1: Anything, Everything -->
       <article class="book-item">
         <div class="book-cover-wrap">
-          <img src="{{ '/assets/images/anything-everything.jpg' | relative_url }}" alt="Anything, Everything book cover" class="book-cover">
+          <img src="/bekahoverbey/assets/images/anything-everything.jpg" alt="Anything, Everything book cover" class="book-cover">
         </div>
         <div class="book-info">
           <p class="book-series">Latest Release</p>
@@ -137,7 +161,7 @@ title: Bekah Overbey — Author
       <!-- Book 2: Just Don't Say Love -->
       <article class="book-item">
         <div class="book-cover-wrap">
-          <img src="{{ '/assets/images/just-dont-say-love.jpg' | relative_url }}" alt="Just Don't Say Love book cover" class="book-cover">
+          <img src="/bekahoverbey/assets/images/just-dont-say-love.jpg" alt="Just Don't Say Love book cover" class="book-cover">
         </div>
         <div class="book-info">
           <p class="book-series">&nbsp;</p>
@@ -158,7 +182,7 @@ title: Bekah Overbey — Author
       <!-- Book 3: Hideaway -->
       <article class="book-item">
         <div class="book-cover-wrap">
-          <img src="{{ '/assets/images/hideaway.jpg' | relative_url }}" alt="Hideaway book cover" class="book-cover">
+          <img src="/bekahoverbey/assets/images/hideaway.jpg" alt="Hideaway book cover" class="book-cover">
         </div>
         <div class="book-info">
           <p class="book-series">&nbsp;</p>
@@ -180,7 +204,7 @@ title: Bekah Overbey — Author
       <!-- Book 4: The Block Island Charade -->
       <article class="book-item">
         <div class="book-cover-wrap">
-          <img src="{{ '/assets/images/block-island-charade.jpg' | relative_url }}" alt="The Block Island Charade book cover" class="book-cover">
+          <img src="/bekahoverbey/assets/images/block-island-charade.jpg" alt="The Block Island Charade book cover" class="book-cover">
         </div>
         <div class="book-info">
           <p class="book-series">A Block Island Summer · Book 1</p>
@@ -226,7 +250,7 @@ title: Bekah Overbey — Author
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: '%Y' }} Bekah Overbey. All rights reserved.</p>
+      <p>&copy; 2026 Bekah Overbey. All rights reserved.</p>
     </div>
   </div>
 </section>
@@ -297,3 +321,6 @@ title: Bekah Overbey — Author
     if (e.key === 'Enter') document.getElementById('arc-submit').click();
   });
 </script>
+
+</body>
+</html>
