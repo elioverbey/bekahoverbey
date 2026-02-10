@@ -1,0 +1,14 @@
+title: Bekah Overbey
+description: Author of romcoms with heart, humor, and depth.
+url: "https://bekahoverbey.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
