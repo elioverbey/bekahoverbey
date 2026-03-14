@@ -668,79 +668,6 @@ a { color: inherit; text-decoration: none; }
   margin-top: 0.5rem;
 }
 
-/* ARC signup */
-.arc-signup {
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(212, 137, 155, 0.15);
-  border-radius: 12px;
-  padding: 1.5rem;
-  max-width: 400px;
-}
-
-.arc-heading {
-  font-family: var(--font-script);
-  font-size: 1.1rem;
-  color: var(--rose-deep);
-  margin-bottom: 0.3rem;
-}
-
-.arc-desc {
-  font-size: 0.82rem;
-  color: var(--ink-light);
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.arc-form {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.arc-input {
-  flex: 1;
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  padding: 0.7rem 1rem;
-  border: 1px solid var(--blush);
-  border-radius: 50px;
-  background: white;
-  color: var(--ink);
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-.arc-input::placeholder { color: var(--ink-faint); }
-.arc-input:focus { border-color: var(--rose); }
-
-.arc-button {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--petal);
-  background: var(--ink);
-  border: none;
-  border-radius: 50px;
-  padding: 0.7rem 1.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  box-shadow: 0 3px 12px rgba(189, 107, 128, 0.2);
-}
-
-.arc-button:hover { transform: translateY(-1px); box-shadow: 0 5px 18px rgba(189, 107, 128, 0.3); }
-.arc-button:disabled { opacity: 0.7; cursor: default; transform: none; }
-
-.arc-status {
-  font-size: 0.78rem;
-  margin-top: 0.6rem;
-  min-height: 1.2em;
-}
-
-.arc-status-success { color: #6a9e6a; }
-.arc-status-error { color: var(--rose-deep); }
 
 /* Books divider between coming soon and backlist */
 .books-divider {
@@ -874,7 +801,6 @@ a { color: inherit; text-decoration: none; }
   .coming-soon-cover-wrap { max-width: 200px; margin: 0 auto; }
   .coming-soon-desc { margin-left: auto; margin-right: auto; }
   .book-tags { justify-content: flex-start; }
-  .arc-signup { margin-left: auto; margin-right: auto; }
   .coming-soon-actions { align-items: center; }
   .coming-soon-cta { align-self: center; }
 }
@@ -890,6 +816,4 @@ a { color: inherit; text-decoration: none; }
   .hero-petal { display: none; }
   .book-item, .book-item:nth-child(even) { grid-template-columns: 120px 1fr; gap: 1.25rem; }
   .coming-soon-feature { padding: 2rem; }
-  .arc-form { flex-direction: column; }
-  .arc-button { width: 100%; }
 }

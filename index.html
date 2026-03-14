@@ -89,16 +89,6 @@ title: Bekah Overbey — Author
               Follow for Updates
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
             </a>
-
-            <div class="arc-signup">
-              <p class="arc-heading">Join the ARC Team</p>
-              <p class="arc-desc">Get an early copy in exchange for an honest review.</p>
-              <div class="arc-form" id="arc-form">
-                <input type="email" id="arc-email" class="arc-input" placeholder="Your email" required>
-                <button type="button" id="arc-submit" class="arc-button">I'm In</button>
-              </div>
-              <p class="arc-status" id="arc-status"></p>
-            </div>
           </div>
         </div>
       </div>
@@ -244,51 +234,4 @@ title: Bekah Overbey — Author
     });
   });
 
-  // ARC Team signup via Formspree
-  // Replace YOUR_FORM_ID with your actual Formspree form ID (e.g. "xpzvqkdl")
-  const FORMSPREE_URL = 'https://formspree.io/f/xaqdqwdl';
-
-  document.getElementById('arc-submit').addEventListener('click', async () => {
-    const emailInput = document.getElementById('arc-email');
-    const status = document.getElementById('arc-status');
-    const btn = document.getElementById('arc-submit');
-    const email = emailInput.value.trim();
-
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      status.textContent = 'Please enter a valid email.';
-      status.className = 'arc-status arc-status-error';
-      return;
-    }
-
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    status.textContent = '';
-
-    try {
-      const res = await fetch(FORMSPREE_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ email: email, source: 'ARC Team — Always, Forever' })
-      });
-
-      if (res.ok) {
-        status.textContent = "You're on the list! 🎉";
-        status.className = 'arc-status arc-status-success';
-        emailInput.value = '';
-        btn.textContent = 'Signed Up';
-      } else {
-        throw new Error('Form submission failed');
-      }
-    } catch (err) {
-      status.textContent = 'Something went wrong — try again?';
-      status.className = 'arc-status arc-status-error';
-      btn.disabled = false;
-      btn.textContent = "I'm In";
-    }
-  });
-
-  // Allow Enter key to submit
-  document.getElementById('arc-email').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') document.getElementById('arc-submit').click();
-  });
 </script>
